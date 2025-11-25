@@ -1,6 +1,6 @@
 <Overview>
 
-This project contains SQL scripts for managing and analyzing data in a Zoo Management System. It includes the database schema, sample data for tables, and SQL reports to extract meaningful insights from the data. The project is designed to be run in Oracle SQL*Plus or any compatible SQL environment.
+This project contains SQLPlus scripts for managing and analyzing data in a Zoo Management System. It includes the database schema, sample data for tables, and SQL reports to extract meaningful insights from the data. The project is designed to be run in Oracle SQL*Plus or any compatible SQL environment.
 The database captures details about:
 
 Visitors
