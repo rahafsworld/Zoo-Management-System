@@ -80,7 +80,7 @@ SET LINESIZE 120
 SET FEEDBACK OFF
 SET COLSEP '|'
 
---Total Revenue by Ticket Type
+--Total Revenue by Ticket Type 
 
 ACCEPT ticket_type CHAR PROMPT 'Enter Ticket Type (TT001 to TT004): '
 
