@@ -1,0 +1,1261 @@
+--4.1 Staff Table 
+
+create table staff (
+    staff_id varchar(12) not null,
+    gender char(1),
+    age int,
+    job_position varchar(50),
+    phone_number varchar(20) unique,
+    email varchar(100) unique,
+    primary key(staff_id)
+);
+
+
+--5.1 Staff Records
+
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST1001', 'M', 35, 'Manager', '0123456781', 'manager1@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST1002', 'F', 28, 'Sales Assistant', '0123456782', 'sales2@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST1003', 'M', 42, 'Supervisor', '0123456783', 'supervisor3@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST1004', 'F', 30, 'Cashier', '0123456784', 'cashier4@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST1005', 'M', 33, 'Security', '0123456785', 'security5@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST1006', 'F', 27, 'Customer Service', '0123456786', 'cs6@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST1007', 'M', 38, 'Technician', '0123456787', 'technician7@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST1008', 'F', 26, 'Receptionist', '0123456788', 'reception8@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST1009', 'M', 29, 'Cleaner', '0123456789', 'cleaner9@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST1010', 'F', 31, 'Shop Assistant', '0123456790', 'shop10@gmail.com');
+
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST1034', 'M', 34, 'Technician', '0123456791', 'tech34@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST1036', 'F', 29, 'Receptionist', '0123456792', 'recept36@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST1038', 'M', 40, 'Supervisor', '0123456793', 'super38@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST1040', 'F', 25, 'Cashier', '0123456794', 'cashier40@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST1042', 'M', 36, 'Security', '0123456795', 'sec42@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST1044', 'F', 27, 'Sales Assistant', '0123456796', 'sales44@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST1046', 'M', 31, 'Cleaner', '0123456797', 'cleaner46@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST1048', 'F', 30, 'Customer Service', '0123456798', 'cs48@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST1050', 'M', 37, 'Manager', '0123456799', 'manager50@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST1052', 'F', 32, 'Shop Assistant', '0123456800', 'shop52@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST2001', 'M', 40, 'Maintenance Worker', '0123456691', 'maintenance1@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST2002', 'F', 36, 'Maintenance Worker', '0123426792', 'maintenance2@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST2003', 'M', 45, 'Maintenance Worker', '0125456793', 'maintenance3@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST2004', 'F', 34, 'Maintenance Worker', '0123476794', 'maintenance4@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST2005', 'M', 39, 'Maintenance Worker', '0123456095', 'maintenance5@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST2006', 'F', 41, 'Maintenance Worker', '0122456796', 'maintenance6@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST2007', 'M', 37, 'Maintenance Worker', '0123446797', 'maintenance7@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST2008', 'F', 38, 'Maintenance Worker', '0123416798', 'maintenance8@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST2009', 'M', 42, 'Maintenance Worker', '0123456349', 'maintenance9@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST2010', 'F', 35, 'Maintenance Worker', '0123436800', 'maintenance10@gmail.com');
+
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST5001', 'F', 25, 'Entry Ticket Clerk', '0123456801', 'ticketclerk1@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST5002', 'M', 26, 'Entry Ticket Clerk', '0123456802', 'ticketclerk2@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST5003', 'F', 27, 'Entry Ticket Clerk', '0123456803', 'ticketclerk3@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST5004', 'M', 28, 'Entry Ticket Clerk', '0123456804', 'ticketclerk4@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST5005', 'F', 29, 'Entry Ticket Clerk', '0123456805', 'ticketclerk5@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST5006', 'M', 30, 'Entry Ticket Clerk', '0123456806', 'ticketclerk6@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST5007', 'F', 31, 'Entry Ticket Clerk', '0123456807', 'ticketclerk7@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST5008', 'M', 32, 'Entry Ticket Clerk', '0123456808', 'ticketclerk8@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST5009', 'F', 33, 'Entry Ticket Clerk', '0123456809', 'ticketclerk9@gmail.com');
+
+insert into staff (staff_id, gender, age, job_position, phone_number, email) 
+values ('ST5010', 'M', 34, 'Entry Ticket Clerk', '0123456810', 'ticketclerk10@gmail.com');
+
+COLUMN staff_id FORMAT A9;
+COLUMN gender HEADING 'GENDER' FORMAT A6;
+COLUMN age FORMAT 99;
+COLUMN job_position FORMAT A20;
+COLUMN phone_number FORMAT A13;
+COLUMN email FORMAT A30;
+
+SET LINESIZE 120;
+SET PAGESIZE 35;
+
+
+--4.2 Animal Table
+
+CREATE TABLE animal (
+    animal_id VARCHAR(10) NOT NULL,
+    animal_name VARCHAR(50) UNIQUE,
+    species VARCHAR(50),
+    gender CHAR(1),
+    age INT,
+    enclosure_id VARCHAR(4),
+    PRIMARY KEY(animal_id),
+    CHECK (enclosure_id IN ('E001', 'E002', 'E003', 'E004', 'E005', 'E006', 'E007', 'E008', 'E009', 'E010'))
+);
+
+--5.2 Animal Records
+
+INSERT INTO animal (animal_id, animal_name, species, gender, age, enclosure_id) 
+VALUES ('A001', 'Leo', 'Lion', 'M', 5, 'E005');
+
+INSERT INTO animal (animal_id, animal_name, species, gender, age, enclosure_id) 
+VALUES ('A002', 'Maya', 'Elephant', 'F', 12, 'E005');
+
+INSERT INTO animal (animal_id, animal_name, species, gender, age, enclosure_id) 
+VALUES ('A003', 'Rocky', 'Bear', 'M', 7, 'E008');
+
+INSERT INTO animal (animal_id, animal_name, species, gender, age, enclosure_id) 
+VALUES ('A004', 'Luna', 'Tiger', 'F', 6, 'E007');
+
+INSERT INTO animal (animal_id, animal_name, species, gender, age, enclosure_id) 
+VALUES ('A005', 'Charlie', 'Giraffe', 'M', 9, 'E005');
+
+INSERT INTO animal (animal_id, animal_name, species, gender, age, enclosure_id) 
+VALUES ('A006', 'Daisy', 'Zebra', 'F', 4, 'E005');
+
+INSERT INTO animal (animal_id, animal_name, species, gender, age, enclosure_id) 
+VALUES ('A007', 'Simba', 'Cheetah', 'M', 3, 'E005');
+
+INSERT INTO animal (animal_id, animal_name, species, gender, age, enclosure_id) 
+VALUES ('A008', 'Bella', 'Kangaroo', 'F', 8, 'E003');
+
+INSERT INTO animal (animal_id, animal_name, species, gender, age, enclosure_id) 
+VALUES ('A009', 'Max', 'Panda', 'M', 5, 'E008');
+
+INSERT INTO animal (animal_id, animal_name, species, gender, age, enclosure_id) 
+VALUES ('A010', 'Ruby', 'Hippopotamus', 'F', 11, 'E009');
+
+INSERT INTO animal (animal_id, animal_name, species, gender, age, enclosure_id) 
+VALUES ('A011', 'Nala', 'Lion', 'F', 12, 'E005');
+
+INSERT INTO animal (animal_id, animal_name, species, gender, age, enclosure_id) 
+VALUES ('A012', 'Raja', 'Elephant', 'M', 25, 'E005');
+
+INSERT INTO animal (animal_id, animal_name, species, gender, age, enclosure_id) 
+VALUES ('A013', 'Grizzly', 'Bear', 'M', 18, 'E008');
+
+INSERT INTO animal (animal_id, animal_name, species, gender, age, enclosure_id) 
+VALUES ('A014', 'Shira', 'Tiger', 'F', 15, 'E007');
+
+INSERT INTO animal (animal_id, animal_name, species, gender, age, enclosure_id) 
+VALUES ('A015', 'Twiggy', 'Giraffe', 'F', 18, 'E005');
+
+INSERT INTO animal (animal_id, animal_name, species, gender, age, enclosure_id) 
+VALUES ('A016', 'Stripes', 'Zebra', 'M', 16, 'E005');
+
+INSERT INTO animal (animal_id, animal_name, species, gender, age, enclosure_id) 
+VALUES ('A017', 'Flash', 'Cheetah', 'M', 14, 'E005');
+
+INSERT INTO animal (animal_id, animal_name, species, gender, age, enclosure_id) 
+VALUES ('A018', 'Kiki', 'Kangaroo', 'F', 15, 'E003');
+
+INSERT INTO animal (animal_id, animal_name, species, gender, age, enclosure_id) 
+VALUES ('A019', 'Bamboo', 'Panda', 'F', 12, 'E008');
+
+INSERT INTO animal (animal_id, animal_name, species, gender, age, enclosure_id) 
+VALUES ('A020', 'Misty', 'Hippopotamus', 'F', 20, 'E009');
+
+
+COLUMN animal_id HEADING 'ANIMAL_ID' FORMAT A10;
+COLUMN animal_name FORMAT A15;
+COLUMN species FORMAT A15;
+COLUMN gender HEADING 'GENDER' FORMAT A6;
+COLUMN age FORMAT 99;
+COLUMN enclosure_id HEADING 'ENCLOSURE_ID' FORMAT A12;
+
+
+SET LINESIZE 120;
+SET PAGESIZE 35;
+
+
+
+
+--4.3 Visitor Table
+
+CREATE TABLE visitor (
+    visitor_id VARCHAR(12) NOT NULL,
+    visitor_name VARCHAR(100),
+    email VARCHAR(100) UNIQUE,
+    phone_number VARCHAR(20) UNIQUE,
+    address VARCHAR(255),
+    age INT,
+    gender CHAR(1),
+    PRIMARY KEY(visitor_id)
+);
+
+
+--5.3 Visitor Records
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0001', 'Amirul Zaid', 'amirul.zaid@gmail.com', '0100000001', '1 Sunrise St, Cityville', 27, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0002', 'Lim Mei Yin', 'lim.meiyin@gmail.com', '0100000002', '2 Sunset Ave, Townsville', 31, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0003', 'Ramesh Nair', 'ramesh.nair@gmail.com', '0100000003', '3 Ocean Blvd, Villagetown', 35, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0004', 'Zarina Musa', 'zarina.musa@gmail.com', '0100000004', '4 Forest Ln, Suburbia', 29, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0005', 'Hafiz Jamal', 'hafiz.jamal@gmail.com', '0100000005', '5 Hilltop Rd, Metrocity', 36, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0006', 'Tan Yew Cheng', 'tan.yew@gmail.com', '0100000006', '6 Valley Dr, Sunnytown', 38, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0007', 'Shalini Devi', 'shalini.d@gmail.com', '0100000007', '7 Ridge Rd, Newcity', 32, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0008', 'Kamal Ariff', 'kamal.ariff@gmail.com', '0100000008', '8 Horizon St, Oldtown', 40, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0009', 'Nora Ibrahim', 'nora.ibrahim@gmail.com', '0100000009', '9 Plains Rd, Coastline', 28, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0010', 'Tengku Amir', 'tengku.amir@gmail.com', '0100000010', '10 Bay Ave, Greenfield', 34, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0011', 'Jasmine Lee', 'jasmine.lee@gmail.com', '0100000011', '11 Garden St, Cityville', 26, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0012', 'Faizal Osman', 'faizal.osman@gmail.com', '0100000012', '12 Marina Dr, Townsville', 37, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0013', 'Yee Wen', 'yee.wen@gmail.com', '0100000013', '13 Blossom Rd, Villagetown', 30, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0014', 'Anwar Hadi', 'anwar.hadi@gmail.com', '0100000014', '14 Clover Ln, Suburbia', 33, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0015', 'Sofia Harun', 'sofia.harun@gmail.com', '0100000015', '15 Ivy Ave, Metrocity', 25, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0016', 'Ganesh Raj', 'ganesh.raj@gmail.com', '0100000016', '16 Lotus St, Sunnytown', 39, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0017', 'Liyana Mansor', 'liyana.mansor@gmail.com', '0100000017', '17 Palm Dr, Newcity', 31, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0018', 'Ismail Rozlan', 'ismail.rozlan@gmail.com', '0100000018', '18 Rose Blvd, Oldtown', 42, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0019', 'Karen Chin', 'karen.chin@gmail.com', '0100000019', '19 Orchid Ln, Coastline', 29, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0020', 'Hakim Latif', 'hakim.latif@gmail.com', '0100000020', '20 Lily St, Greenfield', 35, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0021', 'Cindy Wong', 'cindy.wong@gmail.com', '0100000021', '21 Apple Dr, Cityville', 27, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0022', 'Syafiq Ramli', 'syafiq.ramli@gmail.com', '0100000022', '22 Pear Ln, Townsville', 30, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0023', 'Debbie Khoo', 'debbie.khoo@gmail.com', '0100000023', '23 Peach Rd, Villagetown', 28, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0024', 'Reza Aziz', 'reza.aziz@gmail.com', '0100000024', '24 Plum Ave, Suburbia', 36, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0025', 'Amanda Tan', 'amanda.tan@gmail.com', '0100000025', '25 Grape St, Metrocity', 33, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0026', 'Irfan Malik', 'irfan.malik@gmail.com', '0100000026', '26 Kiwi Ln, Sunnytown', 37, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0027', 'Daphne Leong', 'daphne.leong@gmail.com', '0100000027', '27 Mango Dr, Newcity', 32, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0028', 'Hakimi Zainal', 'hakimi.zainal@gmail.com', '0100000028', '28 Melon Rd, Oldtown', 41, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0029', 'Rachel Ng', 'rachel.ng@gmail.com', '0100000029', '29 Lemon St, Coastline', 29, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V0030', 'Azman Yahya', 'azman.yahya@gmail.com', '0100000030', '30 Papaya Blvd, Greenfield', 34, 'M');
+
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V1001', 'John Doe', 'john.doe@gmail.com', '0123456789', '123 Main St, Cityville', 34, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V1002', 'Jane Smith', 'jane.smith@gmail.com', '0987654321', '456 Park Ave, Townsville', 28, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V1003', 'Michael Lee', 'm.lee@gmail.com', '0111222333', '789 Oak St, Villagetown', 41, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V1004', 'Emily Tan', 'emily.tan@gmail.com', '0144556677', '321 Lake Rd, Suburbia', 25, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V1005', 'Ali Hassan', 'ali.hassan@gmail.com', '0167788990', '654 Riverbank, Metrocity', 37, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V1006', 'Nur Aina', 'nur.aina@gmail.com', '0133344556', '987 Sunset Blvd, Sunnytown', 30, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V1007', 'David Chong', 'd.chong@gmail.com', '0178899001', '234 Spring St, Newcity', 39, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V1008', 'Priya Kumar', 'priya.kumar@gmail.com', '0156677889', '876 Winter Rd, Oldtown', 27, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V1009', 'Chen Wei', 'chen.wei@gmail.com', '0191122334', '111 Greenhill, Uptown', 36, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V1010', 'Aisha Rahman', 'aisha.rahman@gmail.com', '0182233445', '432 Ocean Dr, Coastline', 29, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V1100', 'Adam Lim', 'adam.lim@gmail.com', '0110001100', '10 Pine St, Cityville', 32, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V1118', 'Sara Wong', 'sara.wong@gmail.com', '0110001118', '12 Palm Ave, Townsville', 26, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V1124', 'Daniel Tan', 'daniel.tan@gmail.com', '0110001124', '15 Rose Rd, Villagetown', 40, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V1132', 'Liyana Zulkifli', 'liyana.z@gmail.com', '0110001132', '18 Sunview, Suburbia', 29, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V1144', 'Farid Azmi', 'farid.azmi@gmail.com', '0110001144', '22 Maple St, Metrocity', 35, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V1149', 'Mei Ling', 'mei.ling@gmail.com', '0110001149', '25 Lavender Ave, Sunnytown', 28, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V1159', 'Ravi Shankar', 'ravi.shankar@gmail.com', '0110001159', '33 Orchid Rd, Newcity', 38, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V1172', 'Siti Nurhaliza', 'siti.nur@gmail.com', '0110001172', '44 Daisy Ln, Oldtown', 27, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V1186', 'Jason Teh', 'jason.teh@gmail.com', '0110001186', '56 Fern Blvd, Uptown', 36, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V2009', 'Amani Zain', 'amani.zain@gmail.com', '0110002009', '77 Coral Dr, Coastline', 30, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V2022', 'Imran Hafiz', 'imran.hafiz@gmail.com', '0110002022', '88 Birch Ln, Greenfield', 33, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V2037', 'Nadia Rahim', 'nadia.rahim@gmail.com', '0110002037', '90 Willow Rd, Cityville', 24, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V2044', 'Yusof Han', 'yusof.han@gmail.com', '0110002044', '102 Cedar St, Townsville', 39, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V2052', 'Kavitha Devi', 'kavitha.d@gmail.com', '0110002052', '111 Spruce Rd, Villagetown', 31, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V2061', 'Nicholas Goh', 'nicholas.g@gmail.com', '0110002061', '115 Elm Dr, Suburbia', 42, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V2072', 'Azlina Omar', 'azlina.omar@gmail.com', '0110002072', '122 Redwood Ave, Metrocity', 30, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V2094', 'Kelvin Low', 'kelvin.low@gmail.com', '0110002094', '135 Beech St, Sunnytown', 29, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V2122', 'Hana Lee', 'hana.lee@gmail.com', '0110002122', '142 Poplar Rd, Newcity', 33, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V2139', 'Zul Fahmi', 'zul.fahmi@gmail.com', '0110002139', '151 Apple Ln, Oldtown', 37, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V2155', 'Sharmila Krishnan', 'sharmila.k@gmail.com', '0110002155', '166 Peach Blvd, Uptown', 26, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V2162', 'Bryan Ng', 'bryan.ng@gmail.com', '0110002162', '177 Lemon Dr, Coastline', 35, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V2171', 'Adibah Salleh', 'adibah.salleh@gmail.com', '0110002171', '188 Cherry St, Greenfield', 28, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V2222', 'Taufik Ismail', 'taufik.ismail@gmail.com', '0110002222', '200 Mango Ave, Cityville', 34, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V2233', 'Melanie Lau', 'melanie.lau@gmail.com', '0110002233', '212 Fig Ln, Townsville', 27, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V2245', 'Ariff Kamal', 'ariff.kamal@gmail.com', '0110002245', '225 Coconut Rd, Villagetown', 41, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V2266', 'Balqis Ahmad', 'balqis.ahmad@gmail.com', '0110002266', '238 Pineapple St, Suburbia', 25, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V2274', 'Yong Kai', 'yong.kai@gmail.com', '0110002274', '249 Banana Rd, Metrocity', 38, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V2297', 'Nur Farah', 'nur.farah@gmail.com', '0110002297', '258 Kiwi Blvd, Sunnytown', 29, 'F');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V2337', 'Roslan Aziz', 'roslan.aziz@gmail.com', '0110002337', '270 Guava Dr, Newcity', 36, 'M');
+
+INSERT INTO visitor (visitor_id, visitor_name, email, phone_number, address, age, gender) 
+VALUES ('V2359', 'Cheryl Tan', 'cheryl.tan@gmail.com', '0110002359', '288 Lime St, Coastline', 31, 'F');
+
+
+COLUMN visitor_id HEADING 'VISITOR_ID' FORMAT A11;
+COLUMN visitor_name FORMAT A20;
+COLUMN email FORMAT A25;
+COLUMN phone_number FORMAT A13;
+COLUMN address FORMAT A30;
+COLUMN age FORMAT 99;
+COLUMN gender HEADING 'GENDER' FORMAT A6;
+
+SET LINESIZE 120;
+SET PAGESIZE 80;
+
+
+
+
+--4.4 Department (3NF) Table
+
+SET COLSEP '|'
+SET LINESIZE 100;
+SET PAGESIZE 50;
+COLUMN department FORMAT A10;
+COLUMN department_name FORMAT A30;
+COLUMN zone FORMAT A5;
+COLUMN manager_id FORMAT A10;
+
+CREATE TABLE department_3NF (
+    department     VARCHAR2(10),
+    department_name VARCHAR2(50),
+    zone            VARCHAR2(5),
+    manager_id      VARCHAR2(10)
+);
+
+
+--5.4 Department (3NF) Records
+
+INSERT INTO department_3NF VALUES ('DT001', 'Human Resource', 'A', 'HOD001');
+INSERT INTO department_3NF VALUES ('DT002', 'Finance', 'B', 'HOD002');
+INSERT INTO department_3NF VALUES ('DT003', 'Customer Service and Marketing', 'C', 'HOD003');
+INSERT INTO department_3NF VALUES ('DT004', 'Zoology', 'D', 'HOD004');
+INSERT INTO department_3NF VALUES ('DT005', 'Veterinary', 'E', 'HOD005');
+INSERT INTO department_3NF VALUES ('DT006', 'Maintenance and Development', 'F', 'HOD006');
+
+
+
+--4.5 Manager (3NF) Table
+
+SET COLSEP '|'
+SET LINESIZE 100;
+SET PAGESIZE 50;
+
+COLUMN manager_id FORMAT A10;
+COLUMN manager_name FORMAT A30;
+
+CREATE TABLE manager_3NF (
+    manager_id     VARCHAR2(10),
+    manager_name   VARCHAR2(50)
+);
+
+
+--5.5 Manager (3NF) Records
+
+INSERT INTO manager_3NF VALUES ('HOD001', 'Dr. Jane Lin');
+INSERT INTO manager_3NF VALUES ('HOD002', 'Dr. Leo Karp');
+INSERT INTO manager_3NF VALUES ('HOD003', 'Emma Rossi');
+INSERT INTO manager_3NF VALUES ('HOD004', 'Max Carter');
+INSERT INTO manager_3NF VALUES ('HOD005', 'John Cena');
+INSERT INTO manager_3NF VALUES ('HOD006', 'Sarah Adams');
+
+
+
+--4.6 Enclosure Table
+
+SET LINESIZE 100;
+SET PAGESIZE 50;
+SET COLSEP '|'
+
+COLUMN enclosure_id FORMAT A10;
+COLUMN capacity FORMAT 999;
+COLUMN environment_type FORMAT A30;
+
+CREATE TABLE enclosure (
+    enclosure_id     VARCHAR2(10),
+    capacity         NUMBER,
+    environment_type VARCHAR2(50),
+    CONSTRAINT pk_enclosure PRIMARY KEY (enclosure_id)
+);
+
+
+--5.6 Enclosure Records
+
+INSERT INTO enclosure VALUES ('E001', 10, 'Rainforest');
+INSERT INTO enclosure VALUES ('E002', 5, 'Aquatic');
+INSERT INTO enclosure VALUES ('E003', 8, 'Desert');
+INSERT INTO enclosure VALUES ('E004', 12, 'Tundra');
+INSERT INTO enclosure VALUES ('E005', 7, 'Savannah');
+INSERT INTO enclosure VALUES ('E006', 6, 'Mountain');
+INSERT INTO enclosure VALUES ('E007', 9, 'Jungle');
+INSERT INTO enclosure VALUES ('E008', 11, 'Forest');
+INSERT INTO enclosure VALUES ('E009', 15, 'Aquatic');
+INSERT INTO enclosure VALUES ('E010', 13, 'Rainforest');
+INSERT INTO enclosure VALUES ('E011', 10, 'Tundra');
+
+
+
+--4.7 Ticket type (3NF) Table
+
+SET COLSEP '|'
+SET PAGESIZE 50
+SET LINESIZE 120
+
+CREATE TABLE ticket_type_3nf (
+    ticket_type_id   VARCHAR2(5) PRIMARY KEY,
+    ticket_name      VARCHAR2(50),
+    ticket_price     NUMBER(8,2)
+);
+
+
+--5.7 Ticket Type (3NF) Records
+
+INSERT INTO ticket_type_3nf (ticket_type_id, ticket_name, ticket_price)
+VALUES ('TT001', 'Adult', 20);
+INSERT INTO ticket_type_3nf (ticket_type_id, ticket_name, ticket_price) 
+VALUES ('TT002', 'Child', 10);
+INSERT INTO ticket_type_3nf (ticket_type_id, ticket_name, ticket_price) 
+VALUES ('TT003', 'Senior', 15);
+INSERT INTO ticket_type_3nf (ticket_type_id, ticket_name, ticket_price) 
+VALUES ('TT004', 'Foreigner', 25);
+
+
+--4.8 Entry ticket (3NF) Table
+
+SET COLSEP '|'
+
+CREATE TABLE entry_ticket_3nf (
+    ticket_id        VARCHAR2(8) PRIMARY KEY,
+    visitor_id       VARCHAR2(5),
+    staff_id         VARCHAR2(6),
+    entry_date       DATE,
+    ticket_type_id   VARCHAR2(5),
+    payment_method   VARCHAR2(20),
+    CONSTRAINT fk_ticket_type FOREIGN KEY (ticket_type_id)
+        REFERENCES ticket_type_3nf(ticket_type_id),
+    CONSTRAINT fk_visitor_id FOREIGN KEY (visitor_id)
+        REFERENCES visitor(visitor_id)
+);
+
+
+--5.8 Entry Ticket (3NF) Records
+
+INSERT INTO entry_ticket_3nf (ticket_id, visitor_id, staff_id, entry_date, ticket_type_id, payment_method)
+VALUES ('TKT00001', 'V0001', 'ST5001', TO_DATE('01-JAN-25', 'DD-MON-YY'), 'TT001', 'E-Wallet');
+INSERT INTO entry_ticket_3nf (ticket_id, visitor_id, staff_id, entry_date, ticket_type_id, payment_method)
+VALUES ('TKT00002', 'V0002', 'ST5002', TO_DATE('01-JAN-25', 'DD-MON-YY'), 'TT002', 'E-Wallet');
+INSERT INTO entry_ticket_3nf (ticket_id, visitor_id, staff_id, entry_date, ticket_type_id, payment_method)
+VALUES ('TKT00003', 'V0003', 'ST5003', TO_DATE('03-JAN-25', 'DD-MON-YY'), 'TT003', 'Online Banking');
+INSERT INTO entry_ticket_3nf (ticket_id, visitor_id, staff_id, entry_date, ticket_type_id, payment_method)
+VALUES ('TKT00004', 'V0004', 'ST5001', TO_DATE('05-JAN-25', 'DD-MON-YY'), 'TT004', 'E-Wallet');
+INSERT INTO entry_ticket_3nf (ticket_id, visitor_id, staff_id, entry_date, ticket_type_id, payment_method)
+VALUES ('TKT00005', 'V0005', 'ST5004', TO_DATE('05-JAN-25', 'DD-MON-YY'), 'TT001', 'TnG');
+INSERT INTO entry_ticket_3nf (ticket_id, visitor_id, staff_id, entry_date, ticket_type_id, payment_method)
+VALUES ('TKT00006', 'V0006', 'ST5002', TO_DATE('06-JAN-25', 'DD-MON-YY'), 'TT002', 'Online Banking');
+INSERT INTO entry_ticket_3nf (ticket_id, visitor_id, staff_id, entry_date, ticket_type_id, payment_method)
+VALUES ('TKT00007', 'V0007', 'ST5005', TO_DATE('07-JAN-25', 'DD-MON-YY'), 'TT003', 'E-Wallet');
+INSERT INTO entry_ticket_3nf (ticket_id, visitor_id, staff_id, entry_date, ticket_type_id, payment_method)
+VALUES ('TKT00008', 'V0008', 'ST5003', TO_DATE('08-JAN-25', 'DD-MON-YY'), 'TT004', 'TnG');
+INSERT INTO entry_ticket_3nf (ticket_id, visitor_id, staff_id, entry_date, ticket_type_id, payment_method)
+VALUES ('TKT00009', 'V0009', 'ST5004', TO_DATE('10-JAN-25', 'DD-MON-YY'), 'TT001', 'Online Banking');
+INSERT INTO entry_ticket_3nf (ticket_id, visitor_id, staff_id, entry_date, ticket_type_id, payment_method)
+VALUES ('TKT00010', 'V0010', 'ST5005', TO_DATE('10-JAN-25', 'DD-MON-YY'), 'TT002', 'Online Banking');
+INSERT INTO entry_ticket_3nf (ticket_id, visitor_id, staff_id, entry_date, ticket_type_id, payment_method)
+VALUES ('TKT00011', 'V0011', 'ST5001', TO_DATE('12-JAN-25', 'DD-MON-YY'), 'TT003', 'TnG');
+INSERT INTO entry_ticket_3nf (ticket_id, visitor_id, staff_id, entry_date, ticket_type_id, payment_method)
+VALUES ('TKT00012', 'V0012', 'ST5001', TO_DATE('14-JAN-25', 'DD-MON-YY'), 'TT002', 'Online Banking');
+INSERT INTO entry_ticket_3nf (ticket_id, visitor_id, staff_id, entry_date, ticket_type_id, payment_method)
+VALUES ('TKT00013', 'V0013', 'ST5002', TO_DATE('13-JAN-25', 'DD-MON-YY'), 'TT004', 'E-Wallet');
+INSERT INTO entry_ticket_3nf (ticket_id, visitor_id, staff_id, entry_date, ticket_type_id, payment_method)
+VALUES ('TKT00014', 'V0014', 'ST5002', TO_DATE('15-JAN-25', 'DD-MON-YY'), 'TT001', 'Online Banking');
+INSERT INTO entry_ticket_3nf (ticket_id, visitor_id, staff_id, entry_date, ticket_type_id, payment_method)
+VALUES ('TKT00015', 'V0015', 'ST5003', TO_DATE('16-JAN-25', 'DD-MON-YY'), 'TT002', 'TnG');
+INSERT INTO entry_ticket_3nf (ticket_id, visitor_id, staff_id, entry_date, ticket_type_id, payment_method)
+VALUES ('TKT00016', 'V0016', 'ST5003', TO_DATE('18-JAN-25', 'DD-MON-YY'), 'TT004', 'E-Wallet');
+INSERT INTO entry_ticket_3nf (ticket_id, visitor_id, staff_id, entry_date, ticket_type_id, payment_method)
+VALUES ('TKT00017', 'V0017', 'ST5004', TO_DATE('17-JAN-25', 'DD-MON-YY'), 'TT001', 'Online Banking');
+INSERT INTO entry_ticket_3nf (ticket_id, visitor_id, staff_id, entry_date, ticket_type_id, payment_method)
+VALUES ('TKT00018', 'V0018', 'ST5004', TO_DATE('19-JAN-25', 'DD-MON-YY'), 'TT003', 'TnG');
+INSERT INTO entry_ticket_3nf (ticket_id, visitor_id, staff_id, entry_date, ticket_type_id, payment_method)
+VALUES ('TKT00019', 'V0019', 'ST5005', TO_DATE('20-JAN-25', 'DD-MON-YY'), 'TT004', 'E-Wallet');
+INSERT INTO entry_ticket_3nf (ticket_id, visitor_id, staff_id, entry_date, ticket_type_id, payment_method)
+VALUES ('TKT00020', 'V0020', 'ST5005', TO_DATE('22-JAN-25', 'DD-MON-YY'), 'TT001', 'Online Banking');
+INSERT INTO entry_ticket_3nf (ticket_id, visitor_id, staff_id, entry_date, ticket_type_id, payment_method)
+VALUES ('TKT00021', 'V0021', 'ST5001', TO_DATE('23-JAN-25', 'DD-MON-YY'), 'TT003', 'TnG');
+INSERT INTO entry_ticket_3nf (ticket_id, visitor_id, staff_id, entry_date, ticket_type_id, payment_method)
+VALUES ('TKT00022', 'V0022', 'ST5002', TO_DATE('24-JAN-25', 'DD-MON-YY'), 'TT002', 'Online Banking');
+INSERT INTO entry_ticket_3nf (ticket_id, visitor_id, staff_id, entry_date, ticket_type_id, payment_method)
+VALUES ('TKT00023', 'V0023', 'ST5003', TO_DATE('25-JAN-25', 'DD-MON-YY'), 'TT004', 'E-Wallet');
+INSERT INTO entry_ticket_3nf (ticket_id, visitor_id, staff_id, entry_date, ticket_type_id, payment_method)
+VALUES ('TKT00024', 'V0024', 'ST5004', TO_DATE('26-JAN-25', 'DD-MON-YY'), 'TT001', 'Online Banking');
+INSERT INTO entry_ticket_3nf (ticket_id, visitor_id, staff_id, entry_date, ticket_type_id, payment_method)
+VALUES ('TKT00025', 'V0025', 'ST5005', TO_DATE('28-JAN-25', 'DD-MON-YY'), 'TT003', 'TnG');
+INSERT INTO entry_ticket_3nf (ticket_id, visitor_id, staff_id, entry_date, ticket_type_id, payment_method)
+VALUES ('TKT00026', 'V0026', 'ST5001', TO_DATE('29-JAN-25', 'DD-MON-YY'), 'TT004', 'E-Wallet');
+INSERT INTO entry_ticket_3nf (ticket_id, visitor_id, staff_id, entry_date, ticket_type_id, payment_method)
+VALUES ('TKT00027', 'V0027', 'ST5002', TO_DATE('30-JAN-25', 'DD-MON-YY'), 'TT001', 'TnG');
+
+
+--4.9 Maintenance Table
+
+SET COLSEP '|'
+SET LINESIZE 100;
+SET PAGESIZE 50;
+COLUMN maintenance_id FORMAT A10;
+COLUMN staff_id FORMAT A10;
+COLUMN enclosure_id FORMAT A10;
+COLUMN status FORMAT A15;
+COLUMN maintenance_type FORMAT A30;
+COLUMN maintenance_frequency FORMAT A15;
+
+CREATE TABLE maintenance (
+    maintenance_id        VARCHAR2(10)	PRIMARY KEY,
+    staff_id              VARCHAR2(10),
+    enclosure_id          VARCHAR2(10),
+    status                VARCHAR2(20),
+    maintenance_type      VARCHAR2(30),
+    maintenance_frequency VARCHAR2(15),
+    CONSTRAINT fk_maintenance_staff
+        FOREIGN KEY (staff_id)
+        REFERENCES staff(staff_id),
+    CONSTRAINT fk_maintenance_enclosure
+        FOREIGN KEY (enclosure_id)
+        REFERENCES enclosure(enclosure_id)
+);
+
+--5.9 Maintenance Records
+INSERT INTO maintenance VALUES ('MT00001', 'ST1001', 'E001', 'Completed', 'Cleaning', 'Weekly');
+INSERT INTO maintenance VALUES ('MT00002', 'ST1002', 'E002', 'Pending', 'Repairs', 'Monthly');
+INSERT INTO maintenance VALUES ('MT00003', 'ST1003', 'E003', 'In Progress', 'Pest Control', 'Bi-Weekly');
+INSERT INTO maintenance VALUES ('MT00004', 'ST1004', 'E004', 'Completed', 'Repairs', 'Monthly');
+INSERT INTO maintenance VALUES ('MT00005', 'ST1005', 'E005', 'Pending', 'Feeding Equipment Check', 'Weekly');
+INSERT INTO maintenance VALUES ('MT00006', 'ST1006', 'E006', 'In Progress', 'Water Filtration', 'Bi-Weekly');
+INSERT INTO maintenance VALUES ('MT00007', 'ST1007', 'E007', 'Completed', 'Fencing Repair', 'Monthly');
+INSERT INTO maintenance VALUES ('MT00008', 'ST1008', 'E008', 'Pending', 'Lighting Check', 'Weekly');
+INSERT INTO maintenance VALUES ('MT00009', 'ST1009', 'E009', 'In Progress', 'Pest Control', 'Monthly');
+INSERT INTO maintenance VALUES ('MT00010', 'ST1010', 'E010', 'Completed', 'Cleaning', 'Weekly');
+
+
+
+
+--4.10 Tram Table
+
+CREATE TABLE Tram (
+tram_id	varchar(4)	not null,
+zone		char(1),
+capacity	number(2),
+primary key(tram_id)
+);
+
+SET COLSEP '|'
+column tram_id format A7 heading 'Tram ID';
+column zone heading 'Zone';
+column capacity heading 'Capacity';
+
+
+--5.10 Tram Records
+
+insert into Tram values('T001', 'A', 20);
+insert into Tram values('T002', 'A', 10);
+insert into Tram values('T003', 'B', 30);
+insert into Tram values('T004', 'B', 40);
+insert into Tram values('T005', 'C', 30);
+insert into Tram values('T006', 'C', 20);
+insert into Tram values('T007', 'C', 30);
+insert into Tram values('T008', 'B', 30);
+insert into Tram values('T009', 'A', 20);
+insert into Tram values('T010', 'A', 30);
+insert into Tram values('T011', 'D', 30);
+insert into Tram values('T012', 'D', 40);
+insert into Tram values('T013', 'D', 50);
+insert into Tram values('T014', 'D', 30);
+insert into Tram values('T015', 'A', 20);
+
+
+
+
+--4.11 Tram Ride Table
+
+set linesize 120
+set pagesize 50
+CREATE TABLE Tram_Ride (
+ride_id	varchar(6)	not null,
+status		varchar(10),
+ride_date	date,
+tram_id	varchar(5),
+primary key(ride_id),
+foreign key(tram_id) references Tram(tram_id)
+);
+
+alter session set nls_date_format = 'DD/MM/YYYY';
+SET COLSEP '|'
+COLUMN ride_id FORMAT A7 HEADING 'Ride ID';
+COLUMN ride_date FORMAT A13 HEADING 'Ride Date';
+COLUMN tram_id FORMAT A7 HEADING 'Tram ID';
+COLUMN status FORMAT A10 HEADING 'Status';
+
+
+--5.11 Tram Ride Records
+
+insert into Tram_Ride values('TR1001', 'Scheduled', '23/03/2020', 'T001');
+insert into Tram_Ride values('TR1002', 'Scheduled', '12/04/2020', 'T002');
+insert into Tram_Ride values('TR1003', 'Cancelled', '19/01/2023', 'T003');
+insert into Tram_Ride values('TR1004', 'Scheduled', '22/11/2024', 'T004');
+insert into Tram_Ride values('TR1005', 'Completed', '07/08/2020', 'T005');
+insert into Tram_Ride values('TR1006', 'Completed', '30/09/2024', 'T007');
+insert into Tram_Ride values('TR1007', 'Cancelled', '17/05/2021', 'T010');
+insert into Tram_Ride values('TR1008', 'Scheduled', '12/12/2024', 'T008');
+insert into Tram_Ride values('TR1009', 'Completed', '04/04/2024', 'T009');
+insert into Tram_Ride values('TR1010', 'Cancelled', '15/09/2022', 'T011');
+insert into Tram_Ride values('TR1011', 'Completed', '16/02/2021', 'T012');
+insert into Tram_Ride values('TR1012', 'Scheduled’, '05/02/2022', 'T013');
+insert into Tram_Ride values('TR1013', 'Scheduled', '01/01/2022', 'T014');
+
+
+
+
+--4.13  Tram Ride Ticket Type Table
+
+CREATE TABLE TR_Ticket_Type (
+ticket_type	varchar(8)	not null,
+price			number(4,2),
+primary key(ticket_type)
+);
+
+SET COLSEP '|'
+COLUMN ticket_type FORMAT A12 HEADING 'Ticket Type';
+COLUMN price FORMAT 99.99 HEADING 'Price';
+
+
+--5.13 Tram Ride Ticket Type Records
+
+insert into TR_Ticket_Type values ( 'Adult', 10.90);
+insert into TR_Ticket_Type values ( 'Child', 6.90);
+insert into TR_Ticket_Type values ( 'Senior', 8.90);
+
+
+--4.12 Tram Ride Ticket Table
+
+
+CREATE TABLE Tram_Ride_Ticket (
+tr_ticket_id		varchar(6)	not null,
+visitor_id		varchar(6),
+ride_id		varchar(6),
+ticket_type		varchar(8),
+payment_method	varchar(20),
+primary key(tr_ticket_id),
+foreign key(visitor_id) references visitor(visitor_id),
+foreign key(ride_id) references Tram_Ride(ride_id),
+foreign key(ticket_type) references TR_Ticket_Type(ticket_type)
+);
+
+
+SET COLSEP '|'
+COLUMN ticket_type FORMAT A11 HEADING 'Ticket Type';
+COLUMN visitor_id FORMAT A10 HEADING 'Visitor ID';
+COLUMN ride_id FORMAT A7 HEADING 'Ride ID';
+COLUMN tr_ticket_id FORMAT A9 HEADING 'Ticket ID';
+COLUMN payment_method FORMAT A15 HEADING 'Payment Method';
+
+
+--5.12 Tram Ride Ticket Records
+
+insert into Tram_Ride_Ticket values('TT1001', 'V1001', 'TR1001', 'Adult', 'Online Banking');
+insert into Tram_Ride_Ticket values('TT1002', 'V1001', 'TR1002', 'Adult', 'Online Banking');
+insert into Tram_Ride_Ticket values('TT1003', 'V1005', 'TR1003', 'Senior', 'Debit Card');
+insert into Tram_Ride_Ticket values('TT1004', 'V1003', 'TR1005', 'Adult', 'Debit Card');
+insert into Tram_Ride_Ticket values('TT1005', 'V1004', 'TR1004', 'Adult', 'Credit Card');
+insert into Tram_Ride_Ticket values('TT1006', 'V1004', 'TR1008', 'Child', 'Credit Card');
+insert into Tram_Ride_Ticket values('TT1007', 'V1002', 'TR1007', 'Adult', 'E-Wallet');
+insert into Tram_Ride_Ticket values('TT1008', 'V1002', 'TR1009', 'Child', 'E-Wallet');
+insert into Tram_Ride_Ticket values('TT1009', 'V1006', 'TR1010', 'Senior', 'Cash');
+insert into Tram_Ride_Ticket values('TT1010', 'V1002', 'TR1006', 'Adult', 'Cash');
+
+
+--4.16 Animal Show Table
+
+CREATE TABLE Animal_Show (
+	show_id	varchar(6)	not null,
+	descr		varchar(20),
+	show_date	date,
+	zone		char(1),
+primary key(show_id)
+);
+
+SET COLSEP '|'
+COLUMN show_id FORMAT A7 HEADING 'Show ID';
+COLUMN show_date FORMAT A15 HEADING 'Show Date';
+COLUMN zone FORMAT A4 HEADING 'Zone';
+COLUMN descr FORMAT A20 HEADING 'Description';
+
+--5.16 Animal Show Records
+
+insert into Animal_Show values('AS1001', 'Cheetah Show', '11-JAN-2020', 'B');
+insert into Animal_Show values('AS1002', 'Hippopotamus Show', '04-JAN-2020', 'A');
+insert into Animal_Show values('AS1003', 'Elephant Show', '03-FEB-2020', 'C');
+insert into Animal_Show values('AS1004', 'Zebra Show', '04-MAR-2020', 'A');
+insert into Animal_Show values('AS1005', 'Kangaroo Show', '05-APR-2020', 'B');
+insert into Animal_Show values('AS1006', 'Tiger Show', '06-MAY-2020', 'C');
+insert into Animal_Show values('AS1007', 'Panda Show', '07-JUN-2020', 'A');
+insert into Animal_Show values('AS1008', 'Giraffe Show', '08-JUL-2020', 'B');
+insert into Animal_Show values('AS1009', 'Bear Show', '09-AUG-2020', 'C');
+insert into Animal_Show values('AS1010', 'Lion Show', '10-SEP-2020', 'A');
+
+
+--4.14 Animal Show Attendance Table
+
+CREATE TABLE Animal_Show_Attendance (
+show_id	varchar(6)	not null,
+visitor_id	varchar(6)	not null,
+primary key(show_id, visitor_id),
+foreign key (show_id) references Animal_Show(show_id),
+foreign key (visitor_id) references visitor(visitor_id)
+);
+SET COLSEP '|'
+COLUMN show_id FORMAT A7 HEADING 'Show ID';
+COLUMN visitor_id FORMAT A10 HEADING 'Visitor ID';
+
+
+--5.14 Animal Show Attendance Records
+
+insert into Animal_Show_Attendance values ('AS1001', 'V1001');
+insert into Animal_Show_Attendance values ('AS1001', 'V1002');
+insert into Animal_Show_Attendance values ('AS1001', 'V1003');
+insert into Animal_Show_Attendance values ('AS1001', 'V1004');
+insert into Animal_Show_Attendance values ('AS1001', 'V1005');
+insert into Animal_Show_Attendance values ('AS1001', 'V1006');
+insert into Animal_Show_Attendance values ('AS1001', 'V1007');
+insert into Animal_Show_Attendance values ('AS1002', 'V1003');
+insert into Animal_Show_Attendance values ('AS1002', 'V1004');
+insert into Animal_Show_Attendance values ('AS1002', 'V1006');
+insert into Animal_Show_Attendance values ('AS1002', 'V1002');
+insert into Animal_Show_Attendance values ('AS1002', 'V1010');
+insert into Animal_Show_Attendance values ('AS1002', 'V1009');
+insert into Animal_Show_Attendance values ('AS1003', 'V1001');
+insert into Animal_Show_Attendance values ('AS1003', 'V1004');
+insert into Animal_Show_Attendance values ('AS1003', 'V1008');
+insert into Animal_Show_Attendance values ('AS1003', 'V1009');
+insert into Animal_Show_Attendance values ('AS1003', 'V1003');
+insert into Animal_Show_Attendance values ('AS1003', 'V1005');
+insert into Animal_Show_Attendance values ('AS1003', 'V1002');
+insert into Animal_Show_Attendance values ('AS1003', 'V1010');
+insert into Animal_Show_Attendance values ('AS1003', 'V1006');
+
+
+
+
+--4.15 Animal Show Participation Table
+
+CREATE TABLE Animal_Show_Participation (
+show_id	varchar(6)	not null,
+animal_id	varchar(5)	not null,
+primary key(show_id, animal_id),
+foreign key (animal_id) references animal(animal_id),
+foreign key (show_id) references Animal_Show(show_id)
+);
+
+SET COLSEP '|'
+COLUMN show_id FORMAT A7 HEADING 'Show ID';
+COLUMN animal_id FORMAT A9 HEADING 'Animal ID';
+
+
+--5.15 Animal Show Participation Records
+
+insert into Animal_Show_Participation values ('AS1001', 'A007');
+insert into Animal_Show_Participation values ('AS1002', 'A010');
+insert into Animal_Show_Participation values ('AS1005', 'A008');
+insert into Animal_Show_Participation values ('AS1006', 'A004');
+insert into Animal_Show_Participation values ('AS1007', 'A009');
+insert into Animal_Show_Participation values ('AS1008', 'A005');
+insert into Animal_Show_Participation values ('AS1009', 'A003');
+insert into Animal_Show_Participation values ('AS1004', 'A006');
+insert into Animal_Show_Participation values ('AS1010', 'A001');
+insert into Animal_Show_Participation values ('AS1003', 'A002');
+
+
+
+
+
+
+
+
+
+--4.17 Restaurant Table
+
+CREATE TABLE restaurant (
+restaurant_id	VARCHAR2(5) NOT NULL,
+restaurant_name	VARCHAR2(50),
+contact_number	VARCHAR2(14),	 	
+zone 			CHAR(1),	 	       
+PRIMARY KEY(restaurant_id)
+);
+
+
+--5.17 Restaurant Records 
+
+SET COLSEP '|'
+SET LINESIZE 100
+SET PAGESIZE 35
+
+INSERT INTO restaurant (restaurant_id, restaurant_name, contact_number, zone) VALUES ('R1001', 'Red Tomato Cafe', '011-5998765', 'A');
+INSERT INTO restaurant (restaurant_id, restaurant_name, contact_number, zone) VALUES ('R1002', 'Green Farm Restaurant', '013-4273749', 'B');
+INSERT INTO restaurant (restaurant_id, restaurant_name, contact_number, zone) VALUES ('R1003', 'Yummy Cafe', '016-9986453', 'C');
+INSERT INTO restaurant (restaurant_id, restaurant_name, contact_number, zone) VALUES ('R1004', 'Hot Soup Restaurant', '012-3659552', 'D');
+INSERT INTO restaurant (restaurant_id, restaurant_name, contact_number, zone) VALUES ('R1005', 'The Wild Cafe', '019-6160739', 'E');
+INSERT INTO restaurant (restaurant_id, restaurant_name, contact_number, zone) VALUES ('R1006', 'The Hotpot Soup', '014-3240765', 'F');
+INSERT INTO restaurant (restaurant_id, restaurant_name, contact_number, zone) VALUES ('R1007', 'The Nature Restaurant', '012-4883143', 'G');
+INSERT INTO restaurant (restaurant_id, restaurant_name, contact_number, zone) VALUES ('R1008', 'The Big Panda Cafe', '019-5542414', 'H');
+INSERT INTO restaurant (restaurant_id, restaurant_name, contact_number, zone) VALUES ('R1009', 'Safari Restaurant', '011-6623413', 'I');
+INSERT INTO restaurant (restaurant_id, restaurant_name, contact_number, zone) VALUES ('R1010', 'Party Animals Cafe', '018-9927768', 'J');
+
+COLUMN restaurant_id FORMAT A13 HEADING  "Restaurant ID "
+COLUMN restaurant_name FORMAT A21 HEADING "Restaurant Name "
+COLUMN contact_number FORMAT A15 HEADING "Contact Number "
+COLUMN zone FORMAT A4 HEADING "Zone "
+
+
+
+--4.18 Restaurant Order Table
+
+CREATE TABLE restaurant_order (
+restaurant_order_id  VARCHAR2(18) NOT NULL,
+restaurant_id        VARCHAR2(12),
+visitor_id           VARCHAR2(12),
+order_date           DATE,		
+total_items          NUMBER(4),	
+total_price          NUMBER(5,2),	
+PRIMARY KEY(restaurant_order_id),
+FOREIGN KEY(restaurant_id) REFERENCES restaurant(restaurant_id),
+FOREIGN KEY(visitor_id) REFERENCES visitor(visitor_id) 
+);
+
+
+--5.18  Restaurant Order Records
+
+SET COLSEP '|'
+SET LINESIZE 100
+SET PAGESIZE 35
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO012403161100', 'R1001', 'V1100', TO_DATE('24/03/2016', 'DD/MM/YYYY'), 4, 32.00);
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO011405161118', 'R1001', 'V1118', TO_DATE('14/05/2016', 'DD/MM/YYYY'), 3, 25.00);
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO011906161124', 'R1001', 'V1124', TO_DATE('19/06/2016', 'DD/MM/YYYY'), 4, 37.00);
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO012204171132', 'R1001', 'V1132', TO_DATE('22/04/2017', 'DD/MM/YYYY'), 3, 34.00);
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO012407171144', 'R1001', 'V1144', TO_DATE('24/07/2017', 'DD/MM/YYYY'), 4, 32.00);
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO021908171149', 'R1002', 'V1149', TO_DATE('19/08/2017', 'DD/MM/YYYY'), 5, 42.00);
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO020911171159', 'R1002', 'V1159', TO_DATE('09/11/2017', 'DD/MM/YYYY'), 8, 55.00);
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO031212171172', 'R1003', 'V1172', TO_DATE('12/12/2017', 'DD/MM/YYYY'), 5, 37.00);
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO031602181186', 'R1003', 'V1186', TO_DATE('16/02/2018', 'DD/MM/YYYY'), 4, 32.00);
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO032804182009', 'R1003', 'V2009', TO_DATE('28/04/2018', 'DD/MM/YYYY'), 2, 16.00);
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO042206182022', 'R1004', 'V2022', TO_DATE('22/06/2018', 'DD/MM/YYYY'), 3, 29.00);
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO041409182037', 'R1004', 'V2037', TO_DATE('14/09/2018', 'DD/MM/YYYY'), 2, 25.00);
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO051912182044', 'R1005', 'V2044', TO_DATE('19/12/2018', 'DD/MM/YYYY'), 5, 37.00);
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO053012182052', 'R1005', 'V2052', TO_DATE('30/12/2018', 'DD/MM/YYYY'), 3, 27.00);
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO050501192061', 'R1005', 'V2061', TO_DATE('05/01/2019', 'DD/MM/YYYY'), 9, 62.00);
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO062607192072', 'R1006', 'V2072', TO_DATE('26/07/2019', 'DD/MM/YYYY'), 7, 44.00);
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO061206202094', 'R1006', 'V2094', TO_DATE('12/06/2020', 'DD/MM/YYYY'), 1, 12.00);
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO072411202122', 'R1007', 'V2122', TO_DATE('24/11/2020', 'DD/MM/YYYY'), 3, 32.00);
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO071904212139', 'R1007', 'V2139', TO_DATE('19/04/2021', 'DD/MM/YYYY'), 3, 46.00);
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO072804212155', 'R1007', 'V2155', TO_DATE('28/04/2021', 'DD/MM/YYYY'), 2, 16.00);
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO070705212162', 'R1007', 'V2162', TO_DATE('07/05/2021', 'DD/MM/YYYY'), 5, 40.00);
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO071405212171', 'R1007', 'V2171', TO_DATE('14/05/2021', 'DD/MM/YYYY'), 3, 25.00);
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO081909212222', 'R1008', 'V2222', TO_DATE('19/09/2021', 'DD/MM/YYYY'), 4, 42.00);
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO082212212233', 'R1008', 'V2233', TO_DATE('22/12/2021', 'DD/MM/YYYY'), 6, 57.00);
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO081201222245', 'R1008', 'V2245', TO_DATE('12/01/2022', 'DD/MM/YYYY'), 8, 64.00);
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO091803222266', 'R1009', 'V2266', TO_DATE('18/03/2022', 'DD/MM/YYYY'), 5, 54.00);
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO092207222274', 'R1009', 'V2274', TO_DATE('22/07/2022', 'DD/MM/YYYY'), 3, 39.00);
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO092412222297', 'R1009', 'V2297', TO_DATE('24/12/2022', 'DD/MM/YYYY'), 4, 32.00);
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO102102232337', 'R1010', 'V2337', TO_DATE('21/02/2023', 'DD/MM/YYYY'), 2, 20.00);
+
+INSERT INTO restaurant_order (restaurant_order_id, restaurant_id, visitor_id, order_date, total_items, total_price) VALUES ('RO101607232359', 'R1010', 'V2359', TO_DATE('16/07/2023', 'DD/MM/YYYY'), 5, 55.00);
+
+COLUMN restaurant_order_id format A19 HEADING "Restaurant Order ID "
+COLUMN restaurant_id format A13 HEADING "Restaurant ID "
+COLUMN visitor_id FORMAT A10 HEADING "Visitor ID "
+COLUMN order_date FORMAT A10 HEADING "Order Date "
+COLUMN total_items FORMAT A11 HEADING "Total Items "
+COLUMN total_items FORMAT 9999999999
+COLUMN total_price FORMAT A11 HEADING "Total Price "
+COLUMN total_price FORMAT $99999.99
+
+
+
+--4.19 Shop Table
+
+CREATE TABLE shop (
+shop_id 		VARCHAR2(12) NOT NULL,
+shop_name 		CHAR(50),			
+contact_number 	VARCHAR2(15),		
+zone 			CHAR(1),			
+PRIMARY KEY(shop_id)
+);
+
+--5.19 Shop Records
+
+SET COLSEP '|'
+SET LINESIZE 100
+SET PAGESIZE 35
+
+INSERT INTO shop (shop_id, shop_name, contact_number, zone) VALUES ('SS101', 'Rimba Shop', '012-3392424', 'A');
+INSERT INTO shop (shop_id, shop_name, contact_number, zone) VALUES ('SS102', 'Wild Life Shop', '012-4463434', 'B');
+INSERT INTO shop (shop_id, shop_name, contact_number, zone) VALUES ('SS103', 'Mania Souvenir Shop', '013-9234545', 'C');
+INSERT INTO shop (shop_id, shop_name, contact_number, zone) VALUES ('SS104', 'Savannah Souvenir Shop', '014-6713232', 'D');
+INSERT INTO shop (shop_id, shop_name, contact_number, zone) VALUES ('SS105', 'Wood Park Shop', '014-9245656', 'E');
+INSERT INTO shop (shop_id, shop_name, contact_number, zone) VALUES ('SS106', 'Panda Foot Shop', '016-0189292', 'F');
+INSERT INTO shop (shop_id, shop_name, contact_number, zone) VALUES ('SS107', 'Butterfly Souvenir Shop', '016-4347272', 'G');
+INSERT INTO shop (shop_id, shop_name, contact_number, zone) VALUES ('SS108', 'Aqua Shop', '018-1123737', 'H');
+INSERT INTO shop (shop_id, shop_name, contact_number, zone) VALUES ('SS109', 'Honey Bee Souvenir Shop', '019-1197271', 'I');
+INSERT INTO shop (shop_id, shop_name, contact_number, zone) VALUES ('SS110', 'Hippo Shop', '019-1239098', 'J');
+
+COLUMN shop_id FORMAT A7 HEADING "Shop ID "
+COLUMN shop_name FORMAT A23 HEADING "Shop Name "
+COLUMN contact_number FORMAT A15 HEADING "Contact Number "
+COLUMN zone FORMAT A4 HEADING "Zone "
+
+
+
+--4.20 Purchase Table
+
+CREATE TABLE purchase (
+purchase_id		VARCHAR2(5)	NOT NULL,	
+shop_id		VARCHAR2(5),
+visitor_id 		VARCHAR2(5),
+purchase_date	DATE,
+total_price		NUMBER(5,2),
+PRIMARY KEY(purchase_id),
+FOREIGN KEY(shop_id) REFERENCES shop(shop_id),
+FOREIGN KEY(visitor_id) REFERENCES visitor(visitor_id)
+);
+
+
+
+--5.20 Purchase Records
+
+
+SET COLSEP '|'
+SET LINESIZE 100
+SET PAGESIZE 35
+
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1001', 'SS101', 'V1118', TO_DATE('14/5/2016', 'DD/MM/YYYY'), 100.00);
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1002', 'SS101', 'V1132', TO_DATE('22/4/2017', 'DD/MM/YYYY'), 200.00);
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1003', 'SS101', 'V1144', TO_DATE('24/7/2017', 'DD/MM/YYYY'), 150.00);
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1004', 'SS101', 'V1159', TO_DATE('09/11/2017', 'DD/MM/YYYY'), 100.00);
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1005', 'SS101', 'V1172', TO_DATE('01/12/2017', 'DD/MM/YYYY'), 89.00);
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1006', 'SS102', 'V1186', TO_DATE('16/2/2018', 'DD/MM/YYYY'), 93.00);
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1007', 'SS102', 'V2009', TO_DATE('28/4/2018', 'DD/MM/YYYY'), 33.00);
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1008', 'SS102', 'V2037', TO_DATE('28/4/2018', 'DD/MM/YYYY'), 42.00);
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1009', 'SS102', 'V2022', TO_DATE('22/6/2018', 'DD/MM/YYYY'), 120.00);
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1010', 'SS103', 'V2044', TO_DATE('29/12/2018', 'DD/MM/YYYY'), 80.00);
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1011', 'SS103', 'V2052', TO_DATE('30/12/2018', 'DD/MM/YYYY'), 100.00);
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1012', 'SS104', 'V2061', TO_DATE('16/2/2019', 'DD/MM/YYYY'), 150.00);
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1013', 'SS104', 'V2072', TO_DATE('26/7/2019', 'DD/MM/YYYY'), 75.00);
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1014', 'SS104', 'V2139', TO_DATE('19/4/2021', 'DD/MM/YYYY'), 67.00);
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1015', 'SS104', 'V2162', TO_DATE('7/5/2021', 'DD/MM/YYYY'), 130.00);
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1016', 'SS104', 'V2245', TO_DATE('12/1/2022', 'DD/MM/YYYY'), 89.00);
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1017', 'SS105', 'V2266', TO_DATE('13/1/2022', 'DD/MM/YYYY'), 45.00);
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1018', 'SS105', 'V2297', TO_DATE('24/12/2022', 'DD/MM/YYYY'), 57.00);
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1019', 'SS106', 'V2337', TO_DATE('14/1/2022', 'DD/MM/YYYY'), 100.00);
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1020', 'SS106', 'V2359', TO_DATE('21/2/2023', 'DD/MM/YYYY'), 56.00);
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1021', 'SS107', 'V0001', TO_DATE('16/3/2023', 'DD/MM/YYYY'), 40.00);
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1022', 'SS107', 'V0002', TO_DATE('18/3/2023', 'DD/MM/YYYY'), 120.00);
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1023', 'SS107', 'V0004', TO_DATE('16/7/2023', 'DD/MM/YYYY'), 90.00);
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1024', 'SS108', 'V0008', TO_DATE('22/8/2023', 'DD/MM/YYYY'), 99.00);
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1025', 'SS109', 'V0010', TO_DATE('13/9/2023', 'DD/MM/YYYY'), 69.00);
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1026', 'SS109', 'V0012', TO_DATE('21/11/2023', 'DD/MM/YYYY'), 45.00);
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1027', 'SS109', 'V0014', TO_DATE('08/1/2024', 'DD/MM/YYYY'), 96.00);
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1028', 'SS109', 'V0015', TO_DATE('20/5/2024', 'DD/MM/YYYY'), 82.00);
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1029', 'SS110', 'V0016', TO_DATE('14/03/2025', 'DD/MM/YYYY'), 134.00);
+INSERT INTO purchase (purchase_id, shop_id, visitor_id, purchase_date, total_price) VALUES ( 'P1030', 'SS110', 'V0017', TO_DATE('21/7/2025', 'DD/MM/YYYY'), 127.00);
+
+COLUMN purchase_id FORMAT A11 HEADING "Purchase ID "
+COLUMN shop_id FORMAT A7 HEADING "Shop ID "
+COLUMN visitor_id FORMAT A10 HEADING "Visitor ID "
+COLUMN purchase_date FORMAT A13 HEADING "Purchase Date "
+COLUMN total_price FORMAT A11 HEADING "Total Price "
+COLUMN total_price FORMAT $99999.99
+
+
+
+CREATE TABLE shop_item (
+shop_item_id 	VARCHAR2(12) NOT NULL,
+shop_id		VARCHAR2(12), 
+item_name		VARCHAR2(50),		
+quantity		NUMBER(4),	
+price 			NUMBER(5,2),	
+PRIMARY KEY(shop_item_id),
+FOREIGN KEY(shop_id) REFERENCES shop(shop_id)
+);
+
+
+--5.21 Shop Item Records
+
+SET COLSEP '|'
+SET LINESIZE 100
+SET PAGESIZE 35
+
+
+INSERT INTO shop_item (shop_item_id, shop_id, item_name, quantity, price) VALUES ('PX00081', 'SS101', 'Souvenir Keychains', 10, 16.00);
+INSERT INTO shop_item (shop_item_id, shop_id, item_name, quantity, price) VALUES ('PX00092', 'SS101', 'Zoo Magnets', 15, 18.00);
+INSERT INTO shop_item (shop_item_id, shop_id, item_name, quantity, price) VALUES ('PX00321', 'SS102', 'Mini plush toys', 3, 25.00);
+INSERT INTO shop_item (shop_item_id, shop_id, item_name, quantity, price) VALUES ('PX00501', 'SS102', 'Panda Mugs', 6, 25.00);
+INSERT INTO shop_item (shop_item_id, shop_id, item_name, quantity, price) VALUES ('PX00801', 'SS103', 'Zoo T-Shirts', 3, 45.00);
+INSERT INTO shop_item (shop_item_id, shop_id, item_name, quantity, price) VALUES ('PX01201', 'SS104', 'Custom Masks', 5, 20.00);
+INSERT INTO shop_item (shop_item_id, shop_id, item_name, quantity, price) VALUES ('PX01562', 'SS105', 'The Encyclopedia of Animals', 1, 66.00);
+INSERT INTO shop_item (shop_item_id, shop_id, item_name, quantity, price) VALUES ('PX02173', 'SS106', 'Animal Cosplay Costume', 1, 45.00);
+INSERT INTO shop_item (shop_item_id, shop_id, item_name, quantity, price) VALUES ('PX02224', 'SS107', 'Zoo Caps', 3, 20.00);
+INSERT INTO shop_item (shop_item_id, shop_id, item_name, quantity, price) VALUES ('PX02457', 'SS101', 'Hoodie', 1, 42.00);
+INSERT INTO shop_item (shop_item_id, shop_id, item_name, quantity, price) VALUES ('PX02701', 'SS108', 'Handcraft Bags', 2, 30.00);
+INSERT INTO shop_item (shop_item_id, shop_id, item_name, quantity, price) VALUES ('PX04562', 'SS109', 'Wallets', 4, 45.00);
+INSERT INTO shop_item (shop_item_id, shop_id, item_name, quantity, price) VALUES ('PX04773', 'SS109', 'Zoo Stationary Set', 1, 15.00);
+INSERT INTO shop_item (shop_item_id, shop_id, item_name, quantity, price) VALUES ('PX06434', 'SS110', 'Zoo Puzzle Set', 3, 30.00);
+INSERT INTO shop_item (shop_item_id, shop_id, item_name, quantity, price) VALUES ('PX06757', 'SS110', 'City Zoo Building Block Set', 1, 15.00);
+
+COLUMN shop_item_id FORMAT A13 HEADING "Shop Item ID "
+COLUMN shop_id FORMAT A7 HEADING "Shop ID "
+COLUMN item_name FORMAT A27 HEADING "Item Name "
+COLUMN quantity FORMAT A8 HEADING "Quantity "
+COLUMN quantity FORMAT 9999999999
+COLUMN price FORMAT A5 HEADING "Price "
+COLUMN price FORMAT $99999.99
+
+
+
+--4.22 Purchase Item Table
+
+CREATE TABLE purchase_item (
+purchase_id	 VARCHAR2(7) NOT NULL,	
+shop_item_id	 VARCHAR2(8) NOT NULL,
+quantity	 NUMBER(3),
+PRIMARY KEY(purchase_id, shop_item_id),
+FOREIGN KEY(purchase_id) REFERENCES purchase(purchase_id),
+FOREIGN KEY(shop_item_id) REFERENCES shop_item(shop_item_id)
+);
+
+
+--5.22 Purchase Item Records
+
+SET COLSEP '|'
+SET LINESIZE 100
+SET PAGESIZE 35
+
+INSERT INTO purchase_item (purchase_id, shop_item_id, quantity) VALUES ('P1001', 'PX00081', 2);
+INSERT INTO purchase_item (purchase_id, shop_item_id, quantity) VALUES ('P1001', 'PX00092', 1);
+INSERT INTO purchase_item (purchase_id, shop_item_id, quantity) VALUES ('P1001', 'PX00501', 1);
+INSERT INTO purchase_item (purchase_id, shop_item_id, quantity) VALUES ('P1002', 'PX01562', 3);
+INSERT INTO purchase_item (purchase_id, shop_item_id, quantity) VALUES ('P1002', 'PX02457', 2);
+INSERT INTO purchase_item (purchase_id, shop_item_id, quantity) VALUES ('P1003', 'PX01201', 1);
+INSERT INTO purchase_item (purchase_id, shop_item_id, quantity) VALUES ('P1003', 'PX00321', 4);
+INSERT INTO purchase_item (purchase_id, shop_item_id, quantity) VALUES ('P1004', 'PX00092', 1);
+INSERT INTO purchase_item (purchase_id, shop_item_id, quantity) VALUES ('P1005', 'PX00321', 1);
+INSERT INTO purchase_item (purchase_id, shop_item_id, quantity) VALUES ('P1005', 'PX06434', 1);
+INSERT INTO purchase_item (purchase_id, shop_item_id, quantity) VALUES ('P1006', 'PX00321', 1);
+INSERT INTO purchase_item (purchase_id, shop_item_id, quantity) VALUES ('P1006', 'PX04773', 4);
+INSERT INTO purchase_item (purchase_id, shop_item_id, quantity) VALUES ('P1007', 'PX02224', 3);
+INSERT INTO purchase_item (purchase_id, shop_item_id, quantity) VALUES ('P1008', 'PX00321', 1);
+INSERT INTO purchase_item (purchase_id, shop_item_id, quantity) VALUES ('P1008', 'PX01201', 1);
+INSERT INTO purchase_item (purchase_id, shop_item_id, quantity) VALUES ('P1008', 'PX01562', 1);
+
+COLUMN purchase_id FORMAT A11 HEADING "Purchase ID "
+COLUMN shop_item_id FORMAT A12 HEADING "Shop Item ID "
+COLUMN quantity FORMAT A9 HEADING "Quantity "
+COLUMN quantity FORMAT 9999999999
